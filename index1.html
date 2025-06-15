@@ -1,0 +1,274 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Каталог игр</title>
+<style>
+  body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: black;
+color: #333;}
+  header {
+background-color: #333;
+color: white;
+padding: 1em 0;
+text-align: center;}
+  .game-list {
+width: 90%;
+max-width: 1200px;
+margin: 20px auto;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 20px;}
+  .game-card {
+background-color: white;
+border: 1px solid # FF0000;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+   .game-card img {
+width: 100%;
+height: 180px; 
+object-fit: cover;
+display: block;}
+   .game-info {
+padding: 15px;}
+   .game-title {
+margin-bottom: 10px;
+font-size: 1.2em;
+font-weight: bold;
+color: #2c3e50;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;}
+   .game-genres {
+font-size: 0.9em;
+color: #777;
+margin-bottom: 10px;}
+   .game-actions {
+display: flex;
+justify-content: space-between;
+align: center;}
+        .game-actions a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color .3s;}
+}
+   .game-actions a:hover {
+background-color: #0056b3;}
+   footer {
+text-align: center;
+padding: 1em 0;
+background: #333;
+color: white;
+position: fixed;
+bottom: 0;
+width: 100%;}
+</style>
+</head>
+<body>
+<header>
+<h1>Каталог игр enailite</h1>
+</header>
+<div style="background-color: Black; color: white;">
+<div style="display: flex; align-items: center; justify-content: left;">
+<p style="font-size: 20px; margin: 0;">
+<a href="Главная.html" style="color: white; text-decoration: none;">Главная</a> &emsp;&emsp;
+<a href="Скидки.html" style="color: white; text-decoration: none;">Скидки</a> &emsp;&emsp;
+</p>
+<select onchange="if(this.value) window.location.href=this.value" style="font-size: 20px; border: none; color: white; background: none;">
+  <option value="" selected disabled hidden>Жанры</option>
+  <option value="экшен.html">Экшен</option>
+  <option value="приключение.html">Приключение</option>
+  <option value="ролевые.html">Ролевые</option>
+</select>
+    </p>
+</div>
+
+<div class="game-list"> <div class="game-card">
+<img src="21.jpeg" alt="Игра 1">
+<div class="game-info">
+<h3 class="game-title">DreadOut Remastered Collection</h3>
+<p class="game-genres">Жанр: survival horror</p>
+<p align= "right"><font color="#808080"><s>599 Руб</s> 300 Руб</p></font>
+<div class="game-actions">
+<a href="1 игра.html">Подробнее</a>
+<a href="покупка1.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="22.jpeg" alt="The Elder Scrolls 5: Skyrim">
+<div class="game-info">
+<h3 class="game-title">The Elder Scrolls 5: Skyrim</h3>
+<p class="game-genres">Жанр: Action/RPG</p>
+<p align= "right"><font color="#808080"><s>1200 Руб</s>856 Руб</p></font>
+<div class="game-actions">
+<a href="2 игра.html">Подробнее</a>
+<a href="покупка2.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="23.jpg" alt="Игра 3">
+<div class="game-info">
+<h3 class="game-title">BioShock 2 Remastered</h3>
+<p class="game-genres">Жанр: Экшен, ролевые</p>
+<p align= "right"><font color="#808080"><s>540 Руб</s>270 Руб</p></font>
+<div class="game-actions">
+<a href="3 игра.html">Подробнее</a>
+<a href="покупка3.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="24.jpg" alt="Игра 4">
+<div class="game-info">
+<h3 class="game-title">BioShock: The Collection</h3>
+<p class="game-genres">Жанр:Экшен, ролевые</p>
+<p align= "right"><font color="#808080">599 Руб</p></font>
+<div class="game-actions">
+<a href="4 игра.html">Подробнее</a>
+<a href="покупка4.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="25.jpg" alt="Игра 5">
+<div class="game-info">
+<h3 class="game-title">Assassin's Creed: Director's Cut</h3>
+<p class="game-genres">Жанр: Экшен, приключения</p>
+<p align= "right"><font color="#808080"><s>550 Руб</s> 320 Руб</p></font>
+<div class="game-actions">
+<a href="5 игра.html">Подробнее</a>
+<a href="покупка5.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="26.jpg" alt="Игра 6">
+<div class="game-info">
+<h3 class="game-title">Assassin's Creed Syndicate</h3>
+<p class="game-genres">Жанр: экшен, приключения, стелс</p>
+<p align= "right"><font color="#808080"><s>640 Руб</s> 440 Руб</p></font>
+<div class="game-actions">
+<a href="6 игра.html">Подробнее</a>
+<a href="покупка6.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="27.jpg" alt="Игра 7">
+<div class="game-info">
+<h3 class="game-title">Assassin’s Creed Brotherhood</h3>
+<p class="game-genres">Жанр: экшен, приключения</p>
+<p align= "right"><font color="#808080"><s>640 Руб</s>
+440 Руб</p></font>
+<div class="game-actions">
+<a href="7 игра.html">Подробнее</a>
+<a href="покупка7.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="28.jpeg" alt="Игра 8">
+<div class="game-info">
+<h3 class="game-title">Assassin's creed odyssey</h3>
+<p class="game-genres">Жанр:экшен, приключения, приключение</p>
+<p align= "right"><font color="#808080">599 Руб</p></font>
+<div class="game-actions">
+<a href="8 игра.html">Подробнее</a>
+<a href="покупка8.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="29.jpg" alt="Игра 9">
+<div class="game-info">
+<h3 class="game-title">DOOM</h3>
+<p class="game-genres">Жанр:Шутер от первого лица,Мясо,Экшен,Шутер</p>
+<p align= "right"><font color="#808080">599 Руб</p></font>
+<div class="game-actions">
+<a href="9 игра.html">Подробнее</a>
+<a href="покупка9.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="30.jpg" alt="Игра 10">
+<div class="game-info">
+<h3 class="game-title">Mafia II: Definitive Edition</h3>
+<p class="game-genres">Жанр: Экшен,приключение</p>
+<p align= "right"><font color="#808080"><s>1260 Руб</s> 745 Руб</p></font>
+<div class="game-actions">
+<a href="10 игра.html">Подробнее</a>
+<a href="покупка10.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="31.jpg" alt="Игра 11">
+<div class="game-info">
+<h3 class="game-title">Dead Island Definitive Edition</h3>
+<p class="game-genres">Жанр: Экшен</p>
+<p align= "right"><font color="#808080">599 Руб</p></font>
+<div class="game-actions">
+<a href="11 игра.html">Подробнее</a>
+<a href="покупка11.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="32.jpg" alt="Игра 12">
+<div class="game-info">
+<h3 class="game-title">ELDEN RING</h3>
+<p class="game-genres">Жанр: Аниме,Экшен,Ролевые</p>
+<p align= "right"><font color="#808080"><s>1500 Руб</s> 1150 Руб</p></font>
+<div class="game-actions">
+<a href="12 игра.html">Подробнее</a>
+<a href="покупка12.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="33.jpg" alt="Игра 13">
+<div class="game-info">
+<h3 class="game-title">God of War Ragnarök</h3>
+<p class="game-genres">Жанр: Экшен,Приключения,Ролевые</p>
+<p align= "right"><font color="#808080"><s>970 Руб</s> 640 Руб</p></font>
+<div class="game-actions">
+<a href="13 игра.html">Подробнее</a>
+<a href="покупка13.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="34.jpg" alt="Игра 14">
+<div class="game-info">
+<h3 class="game-title">Baldur’s Gate 3</h3>
+<p class="game-genres">Жанр: Экшен,Приключения,Ролевые</p>
+<p align= "right"><font color="#808080"><s>1130 Руб</s> 850 Руб</p></font>
+<div class="game-actions">
+<a href="14 игра.html">Подробнее</a>
+<a href="покупка14.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="35.jpg" alt="Игра 15">
+<div class="game-info">
+<h3 class="game-title">Dead by Daylight</h3>
+<p class="game-genres">Жанр: Экшен,хорор</p>
+<p align= "right"><font color="#808080">599 Руб</p></font>
+<div class="game-actions">
+<a href="15 игра.html">Подробнее</a>
+<a href="покупка15.html?">Купить</a>
+</div></div></div>
+
+<div class="game-card">
+<img src="36.jpg" alt="Игра 16">
+<div class="game-info">
+<h3 class="game-title">Detroit: Become Human</h3>
+<p class="game-genres">Жанр: Экшен,приключение</p>
+<p align= "right"><font color="#808080">599 Руб</p></font>
+<div class="game-actions">
+<a href="16 игра.html">Подробнее</a>
+<a href="покупка16.html?">Купить</a>
+</div></div></div></div>
+        <footer>
+            
+        </footer>
+</body>
+</html>
